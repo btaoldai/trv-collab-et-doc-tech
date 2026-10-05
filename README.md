@@ -28,9 +28,7 @@ Prérequis : Terminal bash (WSL, Linux).
 
 Appeler l'outil :
 
-    ```
     releve --help
-    ```
 
 ## Usage
 
