@@ -1,23 +1,77 @@
-# releve-cli — outil de synthèse de relevés
+# releve-cli — Atelier Logiciel Nantais
 
-> Dépôt-modèle du module *Travail collaboratif & documentation technique* (Bachelor 2).
-> Cliquez sur **Use this template** pour créer le dépôt de votre équipe, nommé
-> `releve-cli-nom1-nom2`, puis invitez votre binôme comme collaborateur.
-
-`releve-cli` est un petit outil en ligne de commande, développé et documenté en équipe. Il lit un
+`releve-cli` est un outil en ligne de commande, développé et documenté en équipe. Il lit un
 fichier de relevés au format CSV (des mesures horodatées) et produit un rapport de synthèse :
 nombre de mesures, moyenne, maximum, minimum, et signalement des doublons.
 
-## Démarrage
+## Installation et démarrage
 
-Avant la première utilisation, suivez le [guide de démarrage](docs/guide-demarrage.md).
+Prérequis : Terminal bash (WSL, Linux).
 
-## Configuration
+1. Cloner le projet
 
-Copiez `config.example.txt` sous le nom `config.txt` et complétez-le avec vos propres réglages.
-Ne versionnez jamais `config.txt` : il est exclu par `.gitignore`.
+   ```
+   git clone https://github.com/WayeNot/releve-cli-guichard-guibert-baffreau-le-roux-beaune.git
+   ```
 
-## Contribuer
+2. Installer les dépendances
 
-Toute modification passe par une branche dédiée et une PR décrite en trois parties (contexte,
-changements, impact), relue par un membre de l'équipe qui n'a pas écrit la modification.
+    ```
+    pip install -r requirements.txt
+    ```
+
+3. Lancer l'outil
+    
+    ```
+    ./start.sh
+    ```
+
+Appeler l'outil :
+
+    ```
+    releve --help
+    ```
+
+## Usage
+
+### Calculer une moyenne a partir d'un fichier :
+
+    ```
+    releve -m filename.txt
+    ```
+
+### Calculer maximum :
+
+    ```
+    releve -max filename.txt
+    ```
+
+## Architecture
+
+[Deux à trois phrases : les grands blocs du système et comment ils
+communiquent. Cette section renvoie vers le schéma détaillé, produit en
+séance 3 — elle ne le duplique pas.]
+
+Schéma détaillé : `docs/architecture.md` (produit en séance 3, pas encore présent).
+
+## Organisation du dépôt
+
+| Chemin | Contenu |
+|---|---|
+| `README.md` | Cette page : présentation, installation, usage, architecture. |
+| `docs/reglages.md` | Référence des réglages disponibles. |
+| `docs/demarrage.md` | Guide détaillé de démarrage. |
+| `docs/architecture.md` | Schéma d'architecture détaillé (à venir, séance 3). |
+| `CHANGELOG.md` | Journal des versions du projet (chapitre 3 : retirez cette ligne si vous ne le créez pas). |
+| `config.example.txt` | Modèle de configuration, sans valeur réelle. |
+
+## Contribution
+
+- Une branche par sujet, nommée `docs/…`, `feat/…` ou `fix/…`.
+- Un message d'enregistrement préfixé par `feat`, `fix`, `docs` ou `chore`.
+- Toute modification passe par une demande de fusion relue par un autre membre.
+- Aucune valeur réelle de configuration n'est enregistrée dans le dépôt.
+
+## Contact
+
+[Nom du binôme] — pour toute question, ouvrez une issue sur ce dépôt.
