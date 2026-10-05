@@ -36,15 +36,15 @@ releve --help
 
 ### Calculer une moyenne a partir d'un fichier :
 
-    ```
-    releve -m filename.txt
-    ```
+```
+releve -m filename.txt
+```
 
 ### Calculer maximum :
 
-    ```
-    releve -max filename.txt
-    ```
+```
+releve -max filename.txt
+```
 
 ## Architecture
 
