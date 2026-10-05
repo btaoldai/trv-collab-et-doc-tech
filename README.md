@@ -26,4 +26,6 @@ Les commandes et les gestes de la plateforme sont résumés dans [l'aide-mémoir
 La syntaxe Markdown utilisée dans toute la documentation est résumée dans [l'aide-mémoire Markdown](docs/aide-memoire-markdown.md).
 
 Les gabarits de travail (fichier README complet, journal des versions, liste de contrôle de relecture,
-compte rendu) sont rassemblés dans [`docs/modeles/`](docs/modeles/).
+compte rendu, schéma d'architecture, fiche de décision, fiche de lecture, tableau de répartition, grille de
+revue, synthèse de revue, journal de traitement des retours, aide-mémoire des étiquettes) sont rassemblés
+dans [`docs/modeles/`](docs/modeles/).
